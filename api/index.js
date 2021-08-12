@@ -7,6 +7,6 @@ servidor.get('/', (req, res, next) => {
     })
 })
 
-servido.listen(3000, () => {
+servidor.listen(3000, () => {
     console.log('Servidor Funcionando')
 })
