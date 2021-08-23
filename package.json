@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Leh22/3W_paw_2021/issues"
   },
-  "homepage": "https://github.com/Leh22/3W_paw_2021#readme"
+  "homepage": "https://github.com/Leh22/3W_paw_2021#readme",
+  "dependencies": {
+    "@angular/cli": "^12.2.2"
+  }
 }
