@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      QUAL COMBUSTÍVEL?
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <ion-item>
+      <ion-label position="floating">Preço da Gasolina:</ion-label>
+      <ion-input type="number" [(ngModel)]="gasolina"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Preço do Etanol: </ion-label>
+      <ion-input type="number" [(ngModel)]="etanol"></ion-input>
+    </ion-item>
+    <ion-item lines="none">
+      <p class="ion-text-center">Abastece com: {{ resposta }}</p>
+    </ion-item>
+    <div>
+      <ion-button expand="block" (click)="verificar()">Verificar</ion-button>
+    </div>
+  </div>
+</ion-content>
