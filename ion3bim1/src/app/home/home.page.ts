@@ -6,17 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-  login = '';
-  senha = '';
-  mensagem = '';
+  gasolina = undefined;
+  etanol = undefined;
+  resposta = undefined;
 
-  validar(): void{
-    if(this.login === 'adimin' && this.senha === '1234'){
-      this.mensagem = 'Logado com sucesso!'
-    }else{
-      this.mensagem = 'Login ou Senha incorretos!'
-    }
-  }
   constructor() {}
 
+  verificar(): void{
+    this.resposta = this.etanol / this.gasolina;
+  }
 }

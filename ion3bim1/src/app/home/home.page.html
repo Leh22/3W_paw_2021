@@ -1,28 +1,27 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Exemplo 1
+      QUAL COMBUSTÍVEL?
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <div id= "container">
+  <div id="container">
     <ion-item>
-      <ion-label position="floating">
-        Login
-      </ion-label>
-      <ion-input [(ngMode)]="Login"></ion-input>
+      <ion-label position="floating">Preço da Gasolina:</ion-label>
+      <ion-input type="number" [(ngModel)]="gasolina"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-label position="floating">
-        Senha
-      </ion-label>
-      <ion-input type="password" [(ngMode)]="Senha"></ion-input>
+      <ion-label position="floating">Preço do Etanol: </ion-label>
+      <ion-input type="number" [(ngModel)]="etanol"></ion-input>
+    </ion-item>
+    <ion-item lines="none">
+      <p class="ion-text-center">Abastece com: {{ resposta }}</p>
     </ion-item>
     <div>
-      <ion-button color="primary" expand="block" size="medium" (click)>
-        ENTRAR
+      <ion-button expand="block" (click)="verificar()">
+        Calcular
       </ion-button>
     </div>
   </div>
